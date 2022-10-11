@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lecture 07</title>
+
+    <style>
+      input:invalid {
+        background-color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header id="top">
+      <h1>Lecture 07</h1>
+    </header>
+
+    <form action="/form-handler" method="get">
+      <fieldset>
+        <legend>Prove you are not a robot</legend>
+        <label for="foo">Please type foo:</label>
+        <input type="text" id="foo" name="foo" pattern="/foo/" />
+        <br />
+
+        <label>
+          Which is cooler? A) dogs B) cats C) fish:
+          <input type="text" id="cool" name="cool" pattern="/a|b|c/" />
+        </label>
+
+        <br />
+        <label>
+          1-10, how are you feeling today?
+          <input type="number" id="feel" name="feel" pattern="/[1-10]/" />
+        </label>
+
+        <br />
+        <label>
+          Retype this phrase: Hello there!
+          <input type="text" id="hello" name="hello" pattern="/^hello/" />
+        </label>
+
+        <br />
+        <label>
+          How many 'n's can you add to sun? (type sun with a multiple n's at the
+          end):
+          <input type="text" id="sun" name="sun" pattern="/sun*/" />
+        </label>
+      </fieldset>
+
+      <button type="submit">Sumbit your form!</button>
+      <button type="reset">Start the form over!</button>
+    </form>
+    <br />
+    <h3>This is my puppy Sai when he was 8 weeks old, isn't he the cutest!</h3>
+    <video
+      width="560"
+      height="315"
+      controls
+      muted
+      src="https://cdn.glitch.global/56163a99-ffbb-4576-95d8-ca83a9acdba8/filtered-4A8526BE-D401-40EF-B46D-B2C838833827.MP4?v=1665501234808"
+    >
+      Get a better browser
+    </video>
+
+    <br />
+
+    <audio
+      controls
+      src="https://cdn.glitch.global/56163a99-ffbb-4576-95d8-ca83a9acdba8/filtered-4A8526BE-D401-40EF-B46D-B2C838833827.MP4?v=1665501234808"
+    >
+      Get a better browser
+    </audio>
+
+    <br />
+  </body>
+</html>
