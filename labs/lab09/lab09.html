@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="uft-8" />
+    <title>Lab09</title>
+
+    <script type="text/javascript">
+        //object with function, arrays, primities
+        var about_user = {
+          name: {first: "Sunjoi", last: "Gandhi"},
+          siblings: 1,
+          interests: ["hiking", "reality tv", "dogs"],
+          bio: function() {
+            //one window
+            alert(
+            this.name[0] + "" + this.name[1] + " has " + this.siblings + " sibling."
+            );
+          }
+        }
+        //nested objects
+        var dog_info = {
+          name: (first: "Sai", last "Gandhi"),
+          type: "border collie",
+          age: 1,
+        };
+        dog_info.name.first
+        //field dynamically added
+        var input_dog_info = {};
+        var question = "What kind of pet do you have?";
+        var answer = prompt(question);
+        input_dog_info[question] = answer;
+        console.log(input_dog_info);
+      //two window
+        confirm(
+        "Submit what kind of pet you have? "
+        )
+      //clicked event type
+      function bodyClicked() {
+        alert("Clicked!");
+      }
+      window.onclick = bodyClicked;
+      window.addEventListener("click", bodyClicked);
+      //key pressed event type
+      function keyPressed() {
+        alert("Pressed");
+      }
+      window.onkeypress = keyPressed;
+    </script>
+  </head>
+
+  <body>
+    <header id="top">
+      <h1>Lab 09</h1>
+    </header>
+
+    <form action="/form-handler" method="get">
+      <fieldset>
+        <legend>Customer Information</legend>
+        <label for="firstname">First Name:</label>
+        <input
+          type="text"
+          id="firstname"
+          name="user_name"
+          autocomplete="given-name"
+        />
+        <br />
+
+        <label>
+          Last name:
+          <input
+            type="text"
+            id="lastname"
+            name="last_name"
+            autocomplete="family-name"
+          />
+        </label>
+        <br />
+
+        <label>
+          Email:
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="youremailaddress@site.com"
+          />
+        </label>
+
+        <button type="submit">Sumbit your form!</button>
+        <script>
+          //on submit event type 
+        function submit() {
+          alert("Submitted"); 
+        }
+          window.onsumbit = submit; 
+        </script>
+        <button type="reset">Start the form over!</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
