@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lecture 10</title>
+
+    <style>
+      input:invalid {
+        background-color: red;
+      }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(() => {
+        console.log("READY");
+        $("#para1").click(() => {
+          $("#para1").html("Hello, World!");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header id="top">
+      <h1>Lab 10</h1>
+    </header>
+
+    <script>
+      console.log(top);
+      let topHeader = document.getElementById("top");
+      console.log(topHeader);
+      if (topHeader) {
+        console.log(topHeader.innerHTML);
+      } else {
+        console.error("No element on page with ID 'topHeader'");
+      }
+    </script>
+
+    <form action="/form-handler" method="get">
+      <fieldset>
+        <legend>Customer Information</legend>
+        <label for="firstname">First Name:</label>
+        <input
+          type="text"
+          id="firstname"
+          name="user_name"
+          autocomplete="given-name"
+        />
+        <br />
+
+        <label>
+          Last name:
+          <input
+            type="text"
+            id="lastname"
+            name="last_name"
+            autocomplete="family-name"
+          />
+        </label>
+        <br />
+
+        <label>
+          Email:
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="youremailaddress@site.com"
+          />
+        </label>
+
+        <br />
+        <label>
+          Choose a date:
+          <input type="date" name="date" />
+        </label>
+        <br />
+
+        <label>
+          Choose a time:
+          <input type="time" name="time" />
+        </label>
+        <br />
+
+        <label>
+          Happy to be here?
+          <input type="checkbox" name="checkbox" />
+        </label>
+        <button type="submit">Sumbit your form!</button>
+        <button type="reset">Start the form over!</button>
+      </fieldset>
+    </form>
+    <br />
+    <script>
+      let textForm = document.getElementByTagName("user_name");
+        console.log("FIRST NAME");
+        for (let i = 0; i < textForm.length; i++) {
+          textForm.setAttribute("id", "name");
+        console.log(textForm);
+      }
+
+      let emailForm = document.getElementByTagName("email");
+        console.log("EMAIL");
+        for (let i = 0; i < emailForm.length; i++) {
+          emailForm.setAttribute("name", "emailAddress");
+        console.log(textForm[i].innerHTML);
+      }
+
+      let date = docutment.getElementByTagName("date");
+        console.log("DATE");
+          for (let i = 0; i < date.length; i++) {
+          date.setAttribute("id", "today's date");
+        console.log(date);
+      }
+
+      let time= document.getElementByTagName("time");
+        console.log("TIME");
+          for (let i = 0; i < time.length; i++) {
+          time.setAttribute("name", "current time");
+        console.log(time);
+      }
+        setTimeout(() => {
+        let newHeading = document.createElement("h1");
+        let headingText = document.createTextNode("New Heading Here");
+        newHeading.appendChild(headingText);
+        ourDiv.insertBefore(newHeading, ourDivPara);
+        }
+    </script>
+  </body>
+</html>
