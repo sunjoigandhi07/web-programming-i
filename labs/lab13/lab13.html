@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lab 13</title>
+
+    <style>
+      /* decendant selector & list-style-position*/
+      ul li {
+        color: purple;
+        list-style-position: outside; 
+      }
+      
+      /* contextual selector- next sibling */
+      h1 + p {
+        font-weight: bold;
+      }
+      
+      /* ID selector & line height  */
+      #para2 {
+        color: pink;
+        line-height: 4em;
+      }
+      
+      /* text-indent */
+      #para3 {
+        text-indent: 3em;
+        text-align: center; 
+      }
+      
+      #para4 {
+        letter-spacing: 1em; 
+        word-spacing: 2em; 
+      }
+      /*forground & background color*/
+      #fbcol {
+        border: 4px dashed; 
+        color: rgba(40, 30, 134, 0.29);
+        background-color: #fc035a
+      }
+      
+      .shadow {
+        text-shadow: 0.2em 0.2em 0.1em gray;
+      }
+      
+      .bold {
+        font-weight: bold;
+      }
+      
+      .tline {
+        text-decoration: line-through;
+      }
+      
+      .uline {
+        text-decoration: underline
+      }
+      
+      .capital {
+        text-transform: capitalize;
+      }
+      
+      .upper {
+        text-transform: uppercase; 
+      }
+      
+      .opacity {
+        opacity: .50; 
+      }
+      
+    </style>
+  </head>
+  <body>
+    <!-- text shadow example -->
+    <header id="top" class="shadow">
+      <h1>Lab 13</h1>
+    </header>
+    
+    <!-- contexual selector & changing opacity example -->
+    <div>
+      <p>PARAGRAPH 1</p>
+      <h1 class = "opacity">Test header, testing opacity </h1>
+    </div>
+    
+    <!-- ID selector example & line height -->
+    <div>
+      <p id="para2">PARAGRAPH 2</p>
+      <h5>words to show line height</h5>
+    </div>
+    
+    <!-- text indent & class selector example & horizontal alignment-->
+    <p id="para3" class="bold">
+      This is paragraph 3 demonstrating a class selector, text indent, and horizontal 
+      alignment ... did it work? Guess I will need to keep writing to make sure it 
+      indents only the first line and that the rest of the lines are centered to the page. 
+    </p>
+    
+    <!-- text-decoration, descendant selecor, * list-style-position example --> 
+    <ul class = "uline">
+   Assignments I have this week: 
+      <li> Calc Midterm</li>
+      <li class= "tline"> WWW Lab 12 </li>
+      <li>Systems lab 5 </li>
+      <li> Systems lab 6 </li>
+      <li class= "tline">WWW lab 13</li>
+    </ul>
+    
+    <!-- text-transform example #1 --> 
+    <ol class= "capital">
+      My favorite books
+      <li>The color purple </li>
+      <li> born a crime</li>
+      <li> the BFG</li>
+    </ol>
+    
+    <!-- text-transform example #2 -->
+    <h3 id="fbcol" class="upper">
+      this is me testing my text-transform uppercase class and changing forground and background color! 
+    </h3>
+    
+    <!-- word & letter spacing example --> 
+    <p id="para4">
+      This is a paragraph testing letter and word spacing 
+    </p>
+    
+  </body>
+</html>
