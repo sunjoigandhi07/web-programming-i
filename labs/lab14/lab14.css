@@ -1,0 +1,97 @@
+a {
+  text-decoration: none; 
+}
+
+a:link {
+  color: red; 
+}
+
+a:visited {
+  color:blue; 
+}
+
+a:hover {
+  color: purple; 
+  background-color: lightgreen; 
+}
+
+a[href*="zyx"]{
+  background: maroon; 
+}
+
+
+li:nth-of-type(even){
+  color: skyblue; 
+}
+li:first-of-type {
+  color: orange; 
+}
+
+.vote p::first-line {
+  letter-spacing: 3em; 
+  color: white; 
+}
+
+.vote p:after {
+  content: "This is a threat, you shouldv'e voted"; 
+  font-weight: bold;
+  color: red; 
+}
+
+body {
+  background: url(https://cdn.glitch.global/1ccae21f-ab59-4cf3-91fa-949ffc201fe0/Screen%20Shot%202022-11-10%20at%208.17.26%20AM.png?v=1668093463460)
+    no-repeat center center local; 
+}
+
+.pic {
+  width: 300px;
+  height: 300px; 
+  background-repeat: no-repeat; 
+  background-position: center center; 
+  background-attachment: local; 
+  background-image: url(https://cdn.glitch.global/1ccae21f-ab59-4cf3-91fa-949ffc201fe0/Screen%20Shot%202022-11-10%20at%208.17.03%20AM.png?v=1668093463496); 
+}
+
+.gradient {
+  width: 350px;
+  background: linear-gradient(
+    to right,
+    red, 
+    yellow
+  );
+}
+
+.content {
+  background: purple; 
+  width: 400px; 
+  height: 100px; 
+  padding: 20px; 
+  border: 4px solid pink; 
+  margin: 20px; 
+}
+
+.box {
+  box-sizing: border-box; 
+  width: 500px;
+  height: 200px; 
+  border: 5px dashed orange; 
+  padding: 10px; 
+}
+
+.border {
+  border-style: double; 
+  color: red; 
+  width: 100px; 
+}
+
+.rounded {
+  border-radius: 50px; 
+  background: darkgreen; 
+  width: 500px; 
+  padding: 20px; 
+}
+
+th[colspan="4"] {
+  background-color: yellow; 
+}
+
