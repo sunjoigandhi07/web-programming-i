@@ -1,0 +1,92 @@
+body{
+  padding: 4em; 
+}
+
+.margin {
+  margin: 3em; 
+}
+
+.negative-margin {
+  margin-bottom: -15px; 
+}
+
+ul.navigation li { 
+  display: inline; 
+  background-color: darkgreen; 
+  border-radius: 3em; 
+  padding: 15px; 
+  box-shadow: 6px 5px 5px grey; 
+}
+
+span.pop {
+  float: right; 
+  position: relative; 
+  margin: 15px; 
+  width: 100px; 
+  color: white; 
+  background-color: maroon;
+  padding: 3px; 
+}
+
+#para1 {
+  padding: 20px; 
+  background-color: grey; 
+  border: 3px solid pink; 
+}
+
+p > em{
+  position: absolute; 
+  top: 40em; 
+  left: 3em; 
+  background-color: lavender;
+}
+
+#para2 {
+  clear: left; 
+  margin-top: 2em; 
+}
+
+ul.floated-navigation {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%;
+  background-color: purple; 
+  list-style-type: none; 
+  margin: 0; 
+  padding: 0; 
+  width: 100%; 
+}
+
+ul.floated-navigation li{
+  float: right; 
+}
+
+ul.floated-navigation li a{
+  display: block; 
+  width: 100px; 
+  text-align: center; 
+  text-decoration: none; 
+  padding: 10px 10px; 
+  margin: 5px; 
+  background-color: lavender; 
+  color: white; 
+  border-radius: 50px; 
+}
+
+#A {
+  z-index: 5; 
+  position: absolute; 
+}
+
+#B {
+  z-index: 50;
+  position: absolute; 
+  left: 200px; 
+}
+
+#C {
+  z-index: 25; 
+  position: absolute; 
+  left: 350px; 
+}
