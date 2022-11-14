@@ -1,0 +1,152 @@
+.purple {
+  background-color: purple;
+  color: white;
+}
+
+.lavender {
+  background-color: lavender;
+  color: white;
+}
+
+.pink {
+  background-color: pink;
+  color: white;
+}
+
+.violet {
+  background-color: mediumvioletred;
+  color: white;
+}
+
+.lightblue {
+  background-color: lightblue;
+  color: white;
+}
+
+.flexbox {
+  display: flex;
+  border: 4px solid blue;
+  align-content: center;
+}
+
+.box {
+  flex: 1 1 150px;
+  flex: 1 0 0%;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.large-box {
+  width: 200px;
+  height: 200px;
+}
+
+.box4 {
+  flex: 3 1 auto;
+}
+
+#layout {
+  display: grid;
+  border: 4px solid indigo;
+
+  grid:
+    [header-start] "h1 h2 h3" 100px
+    [content-start] "ads main links" 300px
+    [footer-start] "f1 f2 f3" 150px
+    / [ads] 200px [main] 100px [links] 250px;
+  grid-gap: 10px 10px;
+}
+
+#one {
+  grid-area: h1;
+  /*grid-area: 1 / 1 / 1 / span 1; */
+}
+
+#two {
+  grid-area: h2;
+  /*grid-area: 1 / 2 / 1 / span 1; */
+}
+
+#three {
+  grid-area: h3;
+  /*grid-area: 1 / 3 / 1 / span 1; */
+}
+
+#four {
+  grid-area:ads ;
+  /*grid-area: 2 / 1 / 2 / span 1; */
+}
+
+#five {
+  grid-area: main;
+  /*grid-area: 2 / 2 / 2 / span 1; */
+}
+
+#six {
+  grid-area: links;
+  /*grid-area: 2 / 3 / 2 / span 1;*/
+}
+
+#seven {
+  grid-area: f1;
+  /*grid-area: 3/ 1 / 3 / span 1; */
+}
+
+#eight {
+  grid-area: f2;
+  /*grid-area: 3 / 3 / 3 / span 1; */
+}
+#nine {
+  grid-area: f3; 
+}
+
+.darkorange {
+  background-color: darkorange;
+  color: black;
+}
+
+.darkorchid {
+  background-color: darkorchid;
+  color: black;
+}
+
+.darksalmon {
+  background-color: darksalmon;
+  color: black;
+}
+
+.deeppink {
+  background-color: deeppink;
+  color: black;
+}
+
+.lightcoral {
+  background-color: lightcoral;
+  color: black;
+}
+
+.navy {
+  background-color: navy;
+  color: white;
+}
+
+.royalblue {
+  background-color: royalblue;
+  color: white;
+}
+
+.seagreen {
+  background-color: seagreen;
+  color: black;
+}
+
+.yellow {
+  background-color: yellow; 
+  color: black; 
+}
