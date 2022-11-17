@@ -1,0 +1,60 @@
+.smooth {
+display: block; 
+  text-decoration: none; 
+  text-align: center; 
+  padding: 2em; 
+  width: 5em; 
+  border-radius: 1em; 
+  color: white; 
+  background-color: olive; 
+  transition-property: background-color; 
+  transition-duration: 0.5s; 
+  transition: background-color 0.5s ease-out, 
+    font-weight 0.5s ease-out, letter-spacing 0.5s ease-out
+    color 3s ease-out; 
+}
+
+.smooth:hover, .smooth:focus {
+  background-color: goldenrod; 
+  font-weight: bold; 
+  letter-spacing: 4px; 
+}
+
+@keyframes colors{
+  0% {
+    background-color: pink;
+  }
+  25% {
+    background-color: lavender;
+  }
+  50% {
+    background-color: lightblue; 
+  }
+  75% {
+    background-color: darkorange; 
+  }
+  100% {
+    background-color: darkmagenta; 
+  }
+}
+
+.animation {
+  animation: colors 3s linear infinite alternate; 
+  display: block; 
+  text-decoration: none; 
+  text-align: center; 
+  padding: 3em; 
+  width: 7em; 
+  border-radius: 3em; 
+  color: black; 
+}
+
+.transform3D{
+  float: right;
+  margin-left: 15px; 
+  transition: transform 0.5s linear; 
+}
+
+.transform3D:hover, .transform3D:focus {
+  transform: rotateX(45deg); 
+}
