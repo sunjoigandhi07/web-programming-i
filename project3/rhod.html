@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="uft-8" />
+    <title>The Real Housewives of Dubai</title>
+    
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+       html {
+        background-color: antiquewhite; 
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="top">
+      <h1 class="titlefont">The Real Housewives of Dubai</h1>
+      <nav>
+        <ul class="floated-navigation">
+          <li>
+             <a href="../index.html">[Back to home page]</a>
+          </li>
+          <li>
+            <a href="kuwtk.html">[Keeping up With the Kardashians]</a>
+          </li>
+          <li>
+            <a href="lib.html">[Love is Blind]</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <a href="rhod.html">
+      <img
+        src="https://ntvb.tmsimg.com/assets/p21949843_b_h8_aa.jpg?w=960&h=540"
+        alt="LIB"
+        width="300"
+      />
+    </a>
+
+    <h2>Summary:</h2>
+    <p class="margin">
+    The Real Housewives of Dubai follows the lives of 6 insanely rich women living in Dubai. We
+    see their family lives, professional lives, and personal lives. Most of the time, they are 
+    fighting about something ridicuous and there is lots of yelling, crying, and drinking. They wear 
+    fabulous outfits and spend most of their time throwing parties for their friends to attend. 
+     </p>
+    
+    <p class="margin">
+    <h2>My thoughts-</h2>
+    I have never watched any of the Real Housewives shows but this one got me. It has a cast of 
+    primarily women of color and only one white woman which I love. Plus, the white woman is the first 
+    and they all shit talk her, which she has earned. During the reunion, it was revealed she is in 
+    Epstein's book... like we aren't gonna talk about that an cancel her??? Anyways, they are all super 
+    rich and spend money on random things. They all compete about who is more famous or successful 
+    or whatever and it is so mind numbing its perfect. No thoughts when I watch this show lol. 
+    <br />
+     </p>
+    Order of how much I like each housewife- 
+   <p id = "favorites" class="margin"></p>
+    
+    <!-- for loop in javascript to list an array -->
+    <script> 
+        const wife = ["1. Lesa", "2. Sara", "3. Nina", "4. Ayan", "5. Caroline B", "6. Caroline S"];
+        var txt = ""; 
+        for(var i = 0; i < wife.length; i++) {
+          txt += wife[i] + "<br>"; 
+        }
+      document.getElementById("favorites").innerHTML = txt; 
+    </script>
+    
+    This is a newer Real Housewives series but there are so many other ones you should check out! 
+    (Link uses random to display 2 different links)
+    <p id= "random"></p>
+    
+    <!-- Using math.random in javascript to display links --> 
+    <script> 
+    let text; 
+      if(Math.random() < 0.5) {
+        text = "<a href= 'https://www.bravotv.com/the-real-housewives-of-beverly-hills'> Visit RH of Beverly Hills </a>"; 
+      } else {
+        text = "<a href= 'https://www.bravotv.com/the-real-housewives-of-orange-county'> Visit RH of Orange County </a>"; 
+      }
+      document.getElementById("random").innerHTML = text; 
+    </script>
+    
+    <h2>
+      K thats all, this show is just all drama and only one season so not much to talk about yet 
+    </h2>
+    
+     <footer>
+    <h1 id = "bottom"></h1>
+      <a href="#top"> [Back to top of page]</a>
+    </footer>
+  </body>
+</html>

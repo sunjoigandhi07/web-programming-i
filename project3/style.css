@@ -1,0 +1,67 @@
+.flexbox {
+  display: flex;
+  border: 4px solid black;
+  align-items: space-around;
+}
+
+
+ul.floated-navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: indigo;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+ul.floated-navigation li {
+  float: left;
+}
+
+ul.floated-navigation li a {
+  display: block;
+  width: 300px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 10px;
+  margin: 5px;
+  background-color: oldlace;
+  color: black;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.titlefont {
+  font-family: "Marker Felt", fantasy;
+    padding: 1.5em; 
+}
+
+.margin {
+  margin: 25px 50px 75px; 
+}
+
+.smooth {
+display: block; 
+  text-decoration: none; 
+  text-align: center; 
+  padding: 3em; 
+  width: 25em; 
+  height: 3em; 
+  border-radius: 1em; 
+  color: white; 
+  background-color: darkmagenta; 
+  transition-property: background-color; 
+  transition-duration: 0.5s; 
+  transition: background-color 0.5s ease-out, 
+    font-weight 0.5s ease-out, letter-spacing 0.5s ease-out
+    color 3s ease-out; 
+}
+
+.smooth:hover, .smooth:focus {
+  background-color: fuchsia; 
+  font-weight: bold; 
+  letter-spacing: 4px; 
+}

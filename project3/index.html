@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf=8" />
+    <title>Project 02</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      html {
+        background-color: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 id="top" class="titlefont">My Thoughts on Reality TV</h1>
+      <a href="#bottom"> [Jump to bottom of page]</a>
+      <p id="greeting"></p>
+
+      <!-- if/else statement using javascript -->
+      <script>
+        const time = new Date().getHours();
+        let greeting;
+        if (time < 10) {
+          greeting = "Good Morning! Time to Talk About Reality TV";
+        } else if (time < 20) {
+          greeting =
+            "Good day! It's the perfect time to talk about last night's episodeeee";
+        } else {
+          greeting = "Good evening! Reality TV time!!";
+        }
+        document.getElementById("greeting").innerHTML = greeting;
+      </script>
+
+      <nav>
+        <ul class="floated-navigation">
+          <li>
+            <a href="kuwtk.html">[Keeping up With the Kardashians]</a>
+          </li>
+          <li>
+            <a href="lib.html">[Love is Blind]</a>
+          </li>
+          <li>
+            <a href="rhod.html">[Real Housewives of Dubai]</a>
+          </li>
+        </ul>
+      </nav>
+      <br />
+    </header>
+
+    <div class="flexbox">
+      <h3>Keeping Up With the Kardashians</h3>
+      <a href="kuwtk.html">
+        <img
+          src="https://imageio.forbes.com/specials-images/imageserve/5f5845151992cda670ba8e2d/kuwtk/960x0.jpg?format=jpg&width=960"
+          alt="KUWTK"
+          width="300"
+        />
+      </a>
+
+      <br />
+
+      <h3>Love is Blind</h3>
+
+      <a href="lib.html">
+        <img
+          src="https://redarrowstudios.com/app/uploads/Love-is-Blind-1.png"
+          alt="LIB"
+          width="300"
+        />
+      </a>
+
+      <br />
+
+      <h3>Real Housewives of Dubai</h3>
+      <a href="rhod.html">
+        <img
+          src="https://ntvb.tmsimg.com/assets/p21949843_b_h8_aa.jpg?w=960&h=540"
+          alt="LIB"
+          width="300"
+        />
+      </a>
+    </div>
+    <br />
+
+    <form action="/form-handler" method="get">
+      <fieldset>
+        <legend>Your Thoughts?</legend>
+        <p>
+          <label>
+            Thoughts on KUWTK?
+            <textarea
+              name="kardash"
+              rows="4"
+              cols="50"
+              placeholder="Khloe has gone through so much..."
+            ></textarea>
+          </label>
+        </p>
+        <p>
+          <label>
+            Thoughts on LIB?
+            <textarea
+              name="blind"
+              rows="4"
+              cols="50"
+              placeholder="Shake is the worst"
+            ></textarea>
+          </label>
+        </p>
+
+        <p>
+          <label>
+            Thoughts on RHOD?
+            <textarea
+              name="dubai"
+              rows="4"
+              cols="50"
+              placeholder="Wow, that was an intense reunion"
+            ></textarea>
+          </label>
+        </p>
+
+        <!-- javascript alert when form is sumbitted -->
+        <button id="submitForm" type="submit">Submit your form!</button>
+        <script>
+          function submit() {
+            alert("Your form has been submitted!");
+          }
+          window.onsubmit = submit;
+        </script>
+        <button type="reset">Start the form over!</button>
+      </fieldset>
+    </form>
+
+    <footer>
+      <h1 id="bottom"></h1>
+      <a href="#top"> [Back to top of page]</a>
+    </footer>
+  </body>
+</html>
